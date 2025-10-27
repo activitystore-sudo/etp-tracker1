@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+:root {
+  /* Content layers */
+  --z-content-low: 10; /* Minor elevated content */
+  --z-content: 20; /* Standard elevated content */
+  --z-content-high: 30; /* Important content that needs prominence */
+
+  /* Navigation layers */
+  --z-nav-low: 100; /* Secondary navigation components */
+  --z-nav: 200; /* Primary navigation bars */
+  --z-nav-sticky: 300; /* Sticky navigation elements */
+
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+}
+
+:root {
+  /* Light Mode */
+  --background: hsl(220 20% 98%);
+  --foreground: hsl(220 10% 20%);
+
+  --surface: hsl(0 0% 100%);
+  --surface-foreground: hsl(220 10% 20%);
+  --sidebar: hsl(220 20% 96%);
+  --sidebar-foreground: hsl(220 10% 25%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(220 10% 20%);
+  --popup: hsl(0 0% 100%);
+  --popup-foreground: hsl(220 10% 20%);
+
+  --primary: hsl(217 91% 60%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(173 80% 40%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --accent: hsl(217 91% 60%);
+  --accent-foreground: hsl(0 0% 100%);
+
+  --muted: hsl(220 20% 94%);
+  --muted-foreground: hsl(220 10% 45%);
+
+  --success: hsl(142 71% 45%);
+  --success-foreground: hsl(0 0% 100%);
+  --error: hsl(0 84% 60%);
+  --error-foreground: hsl(0 0% 100%);
+  --warning: hsl(38 92% 50%);
+  --warning-foreground: hsl(38 100% 10%);
+  --info: hsl(204 92% 50%);
+  --info-foreground: hsl(0 0% 100%);
+  --info-hover: hsl(204 92% 55%);
+  --info-active: hsl(204 92% 45%);
+
+  --border: hsl(220 15% 89%);
+
+  /* Font Families */
+  --font-family-base: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-heading: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-monospace: 'Fira Code', 'Cascadia Code', 'Courier New', monospace;
+  --font-family-cursive: 'cursive';
+
+  /* Border Radius and box shadows */
+  --shadow: 0 1px 2px 0 hsl(220 10% 20% / 0.05);
+  --shadow-md: 0 4px 6px -1px hsl(220 10% 20% / 0.1), 0 2px 4px -2px hsl(220 10% 20% / 0.1);
+  --shadow-lg: 0 10px 15px -3px hsl(220 10% 20% / 0.1), 0 4px 6px -4px hsl(220 10% 20% / 0.1);
+  --shadow-focus: 0 0 0 2px hsl(217 91% 60% / 0.3);
+
+  --radius-sm: 0.25rem; /* 4px */
+  --radius: 0.375rem; /* 6px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-full: 9999px;
+
+  /* Animation */
+  --animation-duration-fast: 150ms;
+  --animation-duration-normal: 300ms;
+  --animation-duration-slow: 500ms;
+
+  /* Chart colors */
+  --chart-color-1: hsl(217 80% 55%);
+  --chart-color-2: hsl(173 70% 45%);
+  --chart-color-3: hsl(38 90% 55%);
+  --chart-color-4: hsl(340 80% 60%);
+  --chart-color-5: hsl(260 75% 65%);
+}
+
+.dark {
+  --background: hsl(220 18% 11%);
+  --foreground: hsl(220 15% 88%);
+
+  --surface: hsl(220 18% 14%);
+  --surface-foreground: hsl(220 15% 88%);
+  --sidebar: hsl(220 18% 12%);
+  --sidebar-foreground: hsl(220 15% 85%);
+  --card: hsl(220 18% 14%);
+  --card-foreground: hsl(220 15% 88%);
+  --popup: hsl(220 18% 16%);
+  --popup-foreground: hsl(220 15% 88%);
+
+  --primary: hsl(217 91% 65%);
+  --primary-foreground: hsl(217 10% 10%);
+  --secondary: hsl(173 80% 45%);
+  --secondary-foreground: hsl(173 10% 10%);
+  --accent: hsl(217 91% 65%);
+  --accent-foreground: hsl(217 10% 10%);
+
+  --muted: hsl(220 18% 18%);
+  --muted-foreground: hsl(220 10% 55%);
+
+  --success: hsl(142 60% 50%);
+  --success-foreground: hsl(142 10% 10%);
+  --error: hsl(0 80% 65%);
+  --error-foreground: hsl(0 10% 10%);
+  --warning: hsl(38 90% 55%);
+  --warning-foreground: hsl(38 10% 10%);
+  --info: hsl(204 90% 55%);
+  --info-foreground: hsl(204 10% 10%);
+  --info-hover: hsl(204 90% 60%);
+  --info-active: hsl(204 90% 50%);
+
+  --border: hsl(220 15% 22%);
+
+  /* Shadows */
+  --shadow: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+  --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+  --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+  --shadow-focus: 0 0 0 2px hsl(217 91% 65% / 0.3);
+
+  /* Chart colors */
+  --chart-color-1: hsl(217 80% 60%);
+  --chart-color-2: hsl(173 70% 50%);
+  --chart-color-3: hsl(38 90% 60%);
+  --chart-color-4: hsl(340 80% 65%);
+  --chart-color-5: hsl(260 75% 70%);
+}
