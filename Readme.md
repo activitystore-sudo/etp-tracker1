@@ -8,9 +8,8 @@ on team, can you do make it easier so we can pick from the below teams, 13M 13P 
 Also on foot it needs to be a pick between Left Right and Dual
 
 the positions as wel, they should be: GK RB LB WB CB MID CDM/6 CAM/10 LW RW WF ST
-also can you add before the criterias a dropdown where you pick assessor: Ken Tougher Graham Keane Tadgh Murphy Stefan Persson Maurice Ward Darren Cranston
+also can you add before the criterias a dropdown where you pick assessor: Ken Tougher, Graham Keane, Tadgh Murphy, Stefan Persson, Maurice Ward, Darren Cranston
 
-Made with Floot.
 
 # Instructions
 
