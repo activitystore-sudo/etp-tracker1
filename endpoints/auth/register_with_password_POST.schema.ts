@@ -3,7 +3,7 @@ import { User } from "../../helpers/User";
 
 export const schema = z.object({
   email: z.string().email("Email is required"),
-  password: z.string(),
+  password: z.string().optional(),
   displayName: z.string().min(1, "Name is required"),
 });
 
